@@ -1054,11 +1054,11 @@
 			 * = (24MHz * (30 + 66 / 625)) / 1 = 722.5344 MHz
 			 * to generate samples rates 11.025 kHz, 22.05 kHz, 44.1 kHz, 88.2 kHz, etc.
 			 */
-         	pll-clocks = <&anatop 0x70 0xc000 0>,
-				         <&anatop 0x70 0x7f 32>,
-				         <&anatop 0x70 0x180000 1>,
-				         <&anatop 0x80 0x3fffffff 96>,
-				         <&anatop 0x90 0x3fffffff 125>;
+			pll-clocks = <&anatop 0x70 0xc000 0>,
+				     <&anatop 0x70 0x7f 32>,
+				     <&anatop 0x70 0x180000 1>,
+				     <&anatop 0x80 0x3fffffff 96>,
+				     <&anatop 0x90 0x3fffffff 125>;
 			pll-clock-names = "src", "lp", "pd", "num", "den";
 			/* The maximum input frequency into the SAI mclk input is 300MHz
 			 * Based on this requirement, pre-div must be at least 3
@@ -1092,11 +1092,11 @@
 			clock-mux = <2>;
 			pre-div = <0>;
 			podf = <63>;
-         	pll-clocks = <&anatop 0x70 0xc000 0>,
-				         <&anatop 0x70 0x7f 32>,
-				         <&anatop 0x70 0x180000 1>,
-				         <&anatop 0x80 0x3fffffff 96>,
-				         <&anatop 0x90 0x3fffffff 125>;
+			pll-clocks = <&anatop 0x70 0xc000 0>,
+				     <&anatop 0x70 0x7f 32>,
+				     <&anatop 0x70 0x180000 1>,
+				     <&anatop 0x80 0x3fffffff 96>,
+				     <&anatop 0x90 0x3fffffff 125>;
 			pll-clock-names = "src", "lp", "pd", "num", "den";
 			pinmuxes = <&iomuxcgpr 0x4 0x100000>;
 			interrupts = <57 0>;
@@ -1119,11 +1119,11 @@
 			clock-mux = <2>;
 			pre-div = <0>;
 			podf = <63>;
-         	pll-clocks = <&anatop 0x70 0xc000 0>,
-				         <&anatop 0x70 0x7f 32>,
-				         <&anatop 0x70 0x180000 1>,
-				         <&anatop 0x80 0x3fffffff 96>,
-				         <&anatop 0x90 0x3fffffff 125>;
+			pll-clocks = <&anatop 0x70 0xc000 0>,
+				     <&anatop 0x70 0x7f 32>,
+				     <&anatop 0x70 0x180000 1>,
+				     <&anatop 0x80 0x3fffffff 96>,
+				     <&anatop 0x90 0x3fffffff 125>;
 			pll-clock-names = "src", "lp", "pd", "num", "den";
 			pinmuxes = <&iomuxcgpr 0x4 0x200000>;
 			interrupts = <58 0>, <59 0>;
